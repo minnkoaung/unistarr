@@ -38,6 +38,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e12020', end
 .ourservices_colums{
     /* padding: 0 20px 0 20px; */
 }
+.ourservices_colums div p{
+ padding: 10px;
+}
+.ourservice_links{
+    padding: 10px;
+}
 .aboutus_containerfluid{
     padding: 65px 0px 0px 0px !important;
     
@@ -58,8 +64,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e12020', end
     color:#6d0507 !important;
     border-color: #6d0507 !important; 
     margin-left: 150px;
+    transition: all .2s ease-in-out;
 }
 .read_morebtn:hover{
+    color: #fff !important;
+    background:#6d0507 !important;
+    border-color: #6d0507 !important; 
+}
+.submit_btn{
+    color:#6d0507 !important;
+    border-color: #6d0507 !important;
+    height: 48px;
+    transition: all .2s ease-in-out;
+}
+.submit_btn:hover{
     color: #fff !important;
     background:#6d0507 !important;
     border-color: #6d0507 !important; 
@@ -67,8 +85,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e12020', end
 .partners_columns{
     padding: 50px 0 50px 0;
 }
+.contact_form_inner_column{
+    
+}
 .video_iframe{
     border-radius: 20px;
+}
+.h_input{
+    height: 58px !important;
+}
+.h_contact_form_message{
+    height: 200px;
+}
+.footer_containerfluid{
+    min-height: 136px;
+    background-image: url(../images/footer_bg.jpg);
+}
+.footer_nav a{
+    color:#a60b0b;
+    display: inline-flex;
+    height: 28px;
+    padding: 5px 10px 5px 10px;
+}
+.footer_nav .active{
+    color:#fff;
 }
 
 

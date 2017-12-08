@@ -13,18 +13,23 @@
     <!-- Start WOWSlider.com HEAD section -->
     <!-- add to the <head> of your page -->
     <link rel="stylesheet" type="text/css" href="engine0/style.css" />
-    <script type="text/javascript" src="engine0/jquery.js"></script>
+    
     <!-- End WOWSlider.com HEAD section -->
     <style>
-        #wowslider-container0 a.ws_next, #wowslider-container0 a.ws_prev{
-            color:#fff !important;
+        #wowslider-container0 a.ws_next,
+        #wowslider-container0 a.ws_prev {
+            color: #fff !important;
             background: transparent !important;
+        }
+        #wowslider-container0 .ws-title span{
+            color: #a60b0b;
+            border-radius: 0px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container is-fluid header_container_fluid">
+    <div class="container is-fluid header_container_fluid" id="site_header">
         <div class="container header_container">
             <div class="columns header-columns">
                 <div class="column is-2 header_logo_wrap has-text-center-mobile">
@@ -33,7 +38,10 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <img src="images/unistarlogo.png" alt="Unistarr Logo">
+                    <img class="is-hidden-touch" src="images/unistarlogo.png" alt="Unistarr Logo">
+                    <div class="is-hidden-desktop has-text-centered">
+                            <img src="images/unistarlogo.png" alt="Unistarr Logo">
+                    </div>
 
                 </div>
                 <div class="column">
@@ -61,25 +69,25 @@
                                 <!-- Right side -->
                                 <div class="level-right">
                                     <div class="level-item navbar-menu mynavbar" id="mynavbar">
-                                        <a href="" class="level-item">
+                                        <a href="index.html" class="level-item">
                                             <strong>Home</strong>
                                         </a>
-                                        <a href="" class="level-item">
+                                        <a href="about.html" class="level-item">
                                             <strong>About Us</strong>
                                         </a>
-                                        <a href="" class="level-item">
+                                        <a href="search.html" class="level-item">
                                             <strong>Search Maid</strong>
                                         </a>
-                                        <a href="" class="level-item">
+                                        <a href="services.html" class="level-item">
                                             <strong>Services</strong>
                                         </a>
-                                        <a href="" class="level-item">
+                                        <a href="gallery.html" class="level-item">
                                             <strong>Gallery</strong>
                                         </a>
-                                        <a href="" class="level-item">
+                                        <a href="video.html" class="level-item">
                                             <strong>Video</strong>
                                         </a>
-                                        <a href="" class="level-item">
+                                        <a href="contact.html" class="level-item">
                                             <strong>Contact Us</strong>
                                         </a>
                                     </div>
@@ -101,20 +109,19 @@
                     <ul>
                         <li>
                             <a href="#">
-                            <img src="data0/images/unistar_img_4.png" alt="Looking For Additional Maid" title="Looking For Additional Maid"
-                                id="wows0_0" />
+                                <img src="data0/images/unistar_img_4.png" alt="Looking For Additional Maid" title="Looking For Additional Maid" id="wows0_0"
+                                />
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="data0/images/unistar_imgb.png" alt="bootstrap carousel" title="Looking For Additional Maid"
-                                    id="wows0_1" />
+                                <img src="data0/images/unistar_imgb.png" alt="bootstrap carousel" title="Looking For Additional Maid" id="wows0_1" />
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                            <img src="data0/images/unistar_imgc.png" alt="Looking For Additional Maid" title="Looking For Additional Maid"
-                                id="wows0_2" />
+                                <img src="data0/images/unistar_imgc.png" alt="Looking For Additional Maid" title="Looking For Additional Maid" id="wows0_2"
+                                />
                             </a>
                         </li>
                     </ul>
@@ -137,10 +144,11 @@
                 </div>
             </div>
 
-        </div><!-- slidercontainer end -->
+        </div>
+        <!-- slidercontainer end -->
     </div>
     <!-- header_container_fluid -->
-    
+
     <div class="container is-fluid our_services_containerfluid is-marginless is-paddingless">
         <div class="container our_services_container">
             <div class="level our_services_level">
@@ -150,47 +158,65 @@
             </div>
             <div class="columns ourservices_colums">
                 <div class="column  has-text-centered">
+                    <a href="#" class="has-text-black-bis ourservice_links">
                         <img src="images/unistar_img(6).png" alt="Our Service Icon" class="ourservice_title has-text-centered">
                         <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam quos tenetur sapiente alias, </p>
+                    </a>
                 </div>
                 <div class="column  has-text-centered">
-                        <img src="images/unistar_img(6).png" alt="Our Service Icon" class="ourservice_title has-text-centered">
-                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam quos tenetur sapiente alias, </p>
+                    <a href="#" class="has-text-black-bis ourservice_links">
+                    <img src="images/unistar_img(6).png" alt="Our Service Icon" class="ourservice_title has-text-centered">
+                    <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam quos tenetur sapiente alias, </p>
+                    </a>
                 </div>
                 <div class="column  has-text-centered">
-                        <img src="images/unistar_img(6).png" alt="Our Service Icon" class="ourservice_title has-text-centered">
-                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam quos tenetur sapiente alias, </p>
+                    <a href="#" class="has-text-black-bis ourservice_links">
+                    <img src="images/unistar_img(6).png" alt="Our Service Icon" class="ourservice_title has-text-centered">
+                    <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam quos tenetur sapiente alias, </p>
+                    </a>
                 </div>
                 <div class="column  has-text-centered">
-                        <img src="images/unistar_img(6).png" alt="Our Service Icon" class="ourservice_title has-text-centered">
-                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam quos tenetur sapiente alias, </p>
+                        <a href="#" class="has-text-black-bis ourservice_links">
+                    <img src="images/unistar_img(6).png" alt="Our Service Icon" class="ourservice_title has-text-centered">
+                    <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam quos tenetur sapiente alias, </p>
+                    </a>
                 </div>
                 <div class="column  has-text-centered">
-                        <img src="images/unistar_img(6).png" alt="Our Service Icon" class="ourservice_title has-text-centered">
-                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam quos tenetur sapiente alias, </p>
+                        <a href="#" class="has-text-black-bis ourservice_links">
+                    <img src="images/unistar_img(6).png" alt="Our Service Icon" class="ourservice_title has-text-centered">
+                    <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam quos tenetur sapiente alias, </p>
+                    </a>
                 </div>
                 <div class="column  has-text-centered">
-                        <img src="images/unistar_img(6).png" alt="Our Service Icon" class="ourservice_title has-text-centered">
-                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam quos tenetur sapiente alias, </p>
+                    <a href="#" class="has-text-black-bis ourservice_links">
+                    <img src="images/unistar_img(6).png" alt="Our Service Icon" class="ourservice_title has-text-centered">
+                    <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam quos tenetur sapiente alias, </p>
+                    </a>
                 </div>
             </div>
         </div>
-    </div> <!-- our_services_containerfluid end -->
+    </div>
+    <!-- our_services_containerfluid end -->
     <div class="container-fluid aboutus_containerfluid is-marginless is-paddingless">
         <div class="container aboutus_container">
             <div class="columns aboutus_columns">
                 <div class="column is-two-thirds aboutus_text_column has-text-left">
                     <img src="images/about_us_title.png" alt="About Us Title">
-                    <p class="has-text-justified aboutus_p">Unistarr Employment provides Foreign Domestic Workers (FDW) from Indonesia, Philippines, Myanmar, India and Sri Lanka. We have New, Transfer, Experienced in Singapore and Experienced in overseas FDWs. We are a licensed maid agency approved by Ministry of Manpower (Singapore). Our FDWs are from licensed overseas agents with training centres equipped with the necessary requirements.</p>
-                    <br><br>
+                    <p class="has-text-justified aboutus_p">Unistarr Employment provides Foreign Domestic Workers (FDW) from Indonesia, Philippines, Myanmar, India
+                        and Sri Lanka. We have New, Transfer, Experienced in Singapore and Experienced in overseas FDWs.
+                        We are a licensed maid agency approved by Ministry of Manpower (Singapore). Our FDWs are from licensed
+                        overseas agents with training centres equipped with the necessary requirements.</p>
+                    <br>
+                    <br>
                     <a class="button is-danger is-outlined is-medium uni_btn read_morebtn is-pulled-right">Read More</a>
                 </div>
-                <div class="column auto has-text-centered is-paddingless" >
-                    <img src="images/maid.png" alt="Unistarr Maid Image" style="margin-bottom: -5px;" >
+                <div class="column auto has-text-centered is-paddingless">
+                    <img src="images/maid.png" alt="Unistarr Maid Image" style="margin-bottom: -5px;">
                 </div>
             </div>
         </div>
-    </div><!-- aboutus_containerfluid -->
+    </div>
+    <!-- aboutus_containerfluid -->
     <div class="container-fluid partners_container_fluid is-marginless is-paddingless">
         <div class="container partners_container">
             <div class="columns is-mobile partners_columns">
@@ -200,170 +226,131 @@
                     </a>
                 </div>
                 <div class="column is-one-third-mobile has-text-centered">
-                        <img src="images/SingapreAEA.png" alt="Singapore AEA">
+                    <img src="images/SingapreAEA.png" alt="Singapore AEA">
                 </div>
                 <div class="column is-one-third-mobile has-text-centered">
                     <a href="https://www.kemlu.go.id/singapore">
                         <img src="images/IndonesiaEmbassy.png" alt="SME 500 LOGO">
-                    </a>    
+                    </a>
                 </div>
             </div>
         </div>
-    </div> <!-- partners_container_fluid -->
+    </div>
+    <!-- partners_container_fluid -->
     <div class="container-fluid contact_container_fluid is-marginless is-paddingless">
-        <div class="container">
+        <div class="container" style="padding-bottom:50px;">
             <div class="columns">
                 <div class="column contact_video_column">
-                    <iframe class="video_iframe" width="100%" height="360" src="https://www.youtube.com/embed/P_q3BdrFsLI" frameborder="1" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe class="video_iframe" width="100%" height="360" src="https://www.youtube.com/embed/P_q3BdrFsLI" frameborder="1" gesture="media"
+                        allow="encrypted-media" allowfullscreen></iframe>
                 </div>
                 <div class="column contact_form_column has-text-centered">
+                    <br>
+                    <br>
                     <img src="images/contactUs.png" alt="Contact Us Title">
-                    
-                    <div class="column">
+
+                    <div class="column contact_form_inner_column">
+                        <form action="" id="contact_form_h">
+                            <div class="field is-horizontal ">
+                                <div class="field-label is-normal has-text-justified">
+                                    <label class="label">Email</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <input class="input h_input h_contact_form_email" type="email" placeholder="Yor Email" data-validation="email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
                             <div class="field is-horizontal">
-                                    <div class="field-label is-normal">
-                                      <label class="label">From</label>
-                                    </div>
-                                    <div class="field-body">
-                                      <div class="field">
-                                        <p class="control is-expanded has-icons-left">
-                                          <input class="input" type="text" placeholder="Name">
-                                          <span class="icon is-small is-left">
-                                            <i class="fa fa-user"></i>
-                                          </span>
-                                        </p>
-                                      </div>
-                                      <div class="field">
-                                        <p class="control is-expanded has-icons-left has-icons-right">
-                                          <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
-                                          <span class="icon is-small is-left">
-                                            <i class="fa fa-envelope"></i>
-                                          </span>
-                                          <span class="icon is-small is-right">
-                                            <i class="fa fa-check"></i>
-                                          </span>
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="field is-horizontal">
-                                    <div class="field-label"></div>
-                                    <div class="field-body">
-                                      <div class="field is-expanded">
-                                        <div class="field has-addons">
-                                          <p class="control">
-                                            <a class="button is-static">
-                                              +44
-                                            </a>
-                                          </p>
-                                          <p class="control is-expanded">
-                                            <input class="input" type="tel" placeholder="Your phone number">
-                                          </p>
-                                        </div>
-                                        <p class="help">Do not enter the first zero</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="field is-horizontal">
-                                    <div class="field-label is-normal">
-                                      <label class="label">Department</label>
-                                    </div>
-                                    <div class="field-body">
-                                      <div class="field is-narrow">
+                                <div class="field-label is-normal has-text-justified">
+                                    <label class="label">Question</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
                                         <div class="control">
-                                          <div class="select is-fullwidth">
-                                            <select>
-                                              <option>Business development</option>
-                                              <option>Marketing</option>
-                                              <option>Sales</option>
-                                            </select>
-                                          </div>
+                                            <textarea id="h_message" class="textarea h_textarea h_contact_form_message" placeholder="Explain how we can help you" data-validation="alphanumeric" data-validation-allowing=" -_" type="text"></textarea>
+                                            <p class="is-size-6">( <span id="pres-max-length">255</span> characters left )</p>
                                         </div>
-                                      </div>
                                     </div>
-                                  </div>
-                                  
-                                  <div class="field is-horizontal">
-                                    <div class="field-label">
-                                      <label class="label">Already a member?</label>
-                                    </div>
-                                    <div class="field-body">
-                                      <div class="field is-narrow">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="field is-horizontal">
+                                <div class="field-label">
+                                    <!-- Left empty for spacing -->
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
                                         <div class="control">
-                                          <label class="radio">
-                                            <input type="radio" name="member">
-                                            Yes
-                                          </label>
-                                          <label class="radio">
-                                            <input type="radio" name="member">
-                                            No
-                                          </label>
+                                            <input type="submit" class="button uni_btn submit_btn is-pulled-right" value="Send Message">
+                                            <!-- <button class="button is-primary">
+                                                Send message
+                                            </button> -->
                                         </div>
-                                      </div>
                                     </div>
-                                  </div>
-                                  
-                                  <div class="field is-horizontal">
-                                    <div class="field-label is-normal">
-                                      <label class="label">Subject</label>
-                                    </div>
-                                    <div class="field-body">
-                                      <div class="field">
-                                        <div class="control">
-                                          <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
-                                        </div>
-                                        <p class="help is-danger">
-                                          This field is required
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="field is-horizontal">
-                                    <div class="field-label is-normal">
-                                      <label class="label">Question</label>
-                                    </div>
-                                    <div class="field-body">
-                                      <div class="field">
-                                        <div class="control">
-                                          <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="field is-horizontal">
-                                    <div class="field-label">
-                                      <!-- Left empty for spacing -->
-                                    </div>
-                                    <div class="field-body">
-                                      <div class="field">
-                                        <div class="control">
-                                          <button class="button is-primary">
-                                            Send message
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                                </div>
+                                <br>
+                            </div>
+                        </form>
                     </div>
-                   
-                         
-                          
-                          
-                          
-                         
-                         
-                          
-                         
-                       
-                       
                 </div>
             </div>
         </div>
-    </div><!-- contact_container_fluid -->
+    </div>
+    <!-- contact_container_fluid -->
+    <div class="container-fluid is-marginless is-paddingless footer_containerfluid">
+        <div class="container footer_container">
+            <div class="columns" style="padding:20px 0px 0px 0px;">
+                <div class="column is-two-thirds">
+                    <div class="footer_nav" id="mynavbar_footer">
+                        <a href="index.html" class="active">
+                            <strong>Home</strong>
+                        </a>
+                        <a href="about.html" class="">
+                            <strong>About Us</strong>
+                        </a>
+                        <a href="search.html" class="">
+                            <strong>Search Maid</strong>
+                        </a>
+                        <a href="services.html" class="">
+                            <strong>Services</strong>
+                        </a>
+                        <a href="gallery.html" class="">
+                            <strong>Gallery</strong>
+                        </a>
+                        <a href="video.html" class="">
+                            <strong>Video</strong>
+                        </a>
+                        <a href="contact.html" class="">
+                            <strong>Contact Us</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="column" >
+                    <div class="columns" >
+                        <div class="column" >
+                            <a href="#" class="is-pulled-right"><img src="images/gplus_btn.png" alt=""></a>
+                            <a href="#" class="is-pulled-right"><img src="images/in_btn.png" alt=""></a>
+                            <a href="#" class="is-pulled-right"><img src="images/twitter_btn.png" alt=""></a>
+                            <a href="#" class="is-pulled-right"><img src="images/facebook_btn.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column has-text-centered ">
+                    <p class=""><a href="#" class="has-text-white-bis">Copyright  2017 Innov8te - All Rights Reserved</a></p>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <!-- footer_containerfluid -->
+    <script type="text/javascript" src="engine0/jquery.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -382,6 +369,18 @@
     <script type="text/javascript" src="engine0/wowslider.js"></script>
     <script type="text/javascript" src="engine0/script.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script>  
+            $.validate({
+            validateOnBlur : true,
+            showHelpOnFocus : true,
+            addSuggestions : true,
+            borderColorOnError : '#e22251',
+            // borderColorOnSuccess : '#0ba62f',
+            addValidClassOnAll : true
+            }); 
+              // Restrict message length
+              $('#h_message').restrictLength( $('#pres-max-length') );
+            </script>
     <!-- End WOWSlider.com BODY section -->
 </body>
 
