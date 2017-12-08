@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Unistar </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container is-fluid header_container_fluid">
+        <div class="container header_container">
+            <div class="columns header-columns">
+                <div class="column is-2 header_logo_wrap">
+                    <div class="navbar-burger burger" data-target="mynavbar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <img src="images/unistarlogo.png" alt="Unistarr Logo">
+                   
+                </div>
+                <div class="column">
+                    <nav class="level is-hidden-mobile">
+                        <!-- Left side / empty -->
+                        <div class="level-left">
+                        </div>
+
+                        <!-- Right side -->
+                        <div class="level-right">
+                            <div class="level-item">
+                                <p class="teltext"><img src="images/unistar_img%20(3).png" alt=""><strong>6563144252/+6597234920</strong></p>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="columns">
+                        <div class="column">
+                            <nav class="level">
+                                <!-- Left side / empty -->
+                                <div class="level-left">
+                                </div>
+
+                                <!-- Right side -->
+                                <div class="level-right">
+                                    <div class="level-item navbar-menu mynavbar" id="mynavbar">
+
+                                        <a href="" class="level-item"><strong>Home</strong></a>
+                                        <a href="" class="level-item"><strong>About Us</strong></a>
+                                        <a href="" class="level-item"><strong>Search Maid</strong></a>
+                                        <a href="" class="level-item"><strong>Services</strong></a>
+                                        <a href="" class="level-item"><strong>Gallery</strong></a>
+                                        <a href="" class="level-item"><strong>Video</strong></a>
+                                        <a href="" class="level-item"><strong>Contact Us</strong></a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- header_container -->
+        <div class="container is-fluid slidercontainer_fluid is-marginless is-paddingless">
+            <img class="slider_img" src="images/unistar_img%20(4).png" alt="">
+        </div>
+    </div>
+    <!-- header_container_fluid -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // Get all "navbar-burger" elements
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(function($el) {
+                    $el.addEventListener('click', function() {
+
+                        // Get the target from the "data-target" attribute
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+
+                        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>
